@@ -1,0 +1,420 @@
+* {
+    color: #00fff5;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 10px #00fff5;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+.warp {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 60px;
+    display: none;
+}
+
+#nav li {
+    height: 60px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 20px;
+    display: block;
+}
+
+#nav .active {
+    border-bottom: 3px solid #00a5c4;
+}
+
+#nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    text-align: center;
+    font-size: 36px;
+    /*padding-top: 50px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#main .icon {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+#main .icon img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.round-nav {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: -125px;
+    top: -125px;
+    animation: round 15s linear infinite;
+}
+
+@keyframes round {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.float-nav {
+    margin: 65px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 79, 196, 0.85);
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0 0 20px 4px #00c6e5;
+    transition: box-shadow .5s;
+    animation: round 15s linear infinite reverse;
+    float: left;
+}
+
+.float-nav:hover {
+    box-shadow: 0 0 20px 8px #00ddff;
+}
+
+#info {
+    padding: 0 90px;
+    position: relative;
+    padding-top: 60px;
+}
+
+#info h2, #contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+
+#info .p-warp {
+    float: left;
+    width: 60%;
+    padding: 20px;
+    display: none;
+}
+
+#info p {
+    text-indent: 2em;
+    font-size: 16px;
+}
+
+#info .photo {
+    width: 38%;
+    height: 38%;
+    float: right;
+    position: relative;
+    display: none;
+
+}
+
+#info img {
+    /*display: block;*/
+    width: 100%;
+    float: right;
+    /*padding:20px;*/
+    position: absolute;
+    box-shadow: 0 0 20px 0px #008fad;
+    display: block;
+}
+
+#info img.active {
+
+}
+
+#skill .skill {
+    position: relative;
+
+}
+
+#skill .skill:hover .detail {
+    opacity: 1;
+}
+#skill .skill:hover .detail .topbar,#skill .skill:hover .detail .bottombar{
+    width:100%;
+}
+#skill .skill:hover .detail .leftbar,#skill .skill:hover .detail .rightbar{
+    height: 100%;
+}
+.skill-warp {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    transition: margin-top 1s ease;
+    margin: 0 auto;
+}
+
+.skill-warp:hover {
+    margin-top: 200px;
+}
+
+#skill h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#skill .detail {
+    background-color: rgba(0, 19, 79, 0.77);
+    transition: all 1s;
+    position: absolute;
+    top: -210px;
+    left: -50px;
+    /*border: 2px solid #fff;*/
+    padding: 10px;
+    width: 300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    /*display: none;*/
+    opacity: 0;
+    overflow: hidden;
+}
+#skill .topbar{
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 2px;
+    background-color:#00fff5 ;
+}
+#skill .leftbar{
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background-color:#00fff5 ;
+}
+#skill .bottombar{
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:#00fff5 ;
+}
+#skill .rightbar{
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    background-color:#00fff5 ;
+}
+#profile {
+    display: block;
+}
+#profile .warp{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 700px;
+    height: 500px;
+    margin:auto;
+    margin-top: 100px;
+    perspective-origin: center center;
+    perspective: 800px;
+}
+#profile .prev,#profile .next{
+    position: absolute;
+    top:50%;
+    width:50px;
+    height: 100px;
+    font-size:50px;
+    line-height: 92px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+#profile .next{
+    right: 0;
+}
+#profile .profile-box{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin:center center -900px;
+    transform: rotateY(0deg);
+    transition: all 1s linear;
+
+    /*animation: rotate 30s linear infinite reverse;*/
+}
+#profile .profile-box .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin:center center -900px;
+    background-color: rgba(0, 57, 115, 0.85);
+    /*border:2px solid #00fff5*/
+    box-shadow: 0 0 20px 0px #00c6e5;
+    transition: box-shadow 1s ;
+}
+#profile .topbar{
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px;
+    background-color:#00fff5;
+}
+#profile .leftbar{
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    background-color:#00fff5 ;
+}
+#profile .bottombar{
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:#00fff5 ;
+}
+#profile .rightbar{
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background-color:#00fff5 ;
+}
+#profile .item:hover .topbar,#profile .item:hover .bottombar{
+    width:100%;
+}
+#profile .item:hover .leftbar,#profile .item:hover .rightbar{
+    height: 100%;
+}
+#profile .profile-box .item:nth-child(1){
+    transform: rotateY(0deg);
+}
+#profile .profile-box .item:nth-child(2){
+    transform: rotateY(45deg);
+}
+#profile .profile-box .item:nth-child(3){
+    transform: rotateY(90deg);
+}
+#profile .profile-box .item:nth-child(4){
+    transform: rotateY(135deg);
+}
+#profile .profile-box .item:nth-child(5){
+    transform: rotateY(180deg);
+}
+#profile .profile-box .item:nth-child(6){
+    transform: rotateY(225deg);
+}
+#profile .profile-box .item:nth-child(7){
+    transform: rotateY(270deg);
+}
+#profile .profile-box .item:nth-child(8){
+    transform: rotateY(315deg);
+}
+#profile h3 {
+    text-align: center;
+    font-size: 30px;
+    margin:20px 0
+}
+
+#profile .demo{
+    width: 100%;
+    height: 390px;
+}
+#profile .demo .img{
+    width: 90%;
+    height: 100%;
+    margin:0 auto;
+}
+
+#profile .demo img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact .contact-warp {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact .inner {
+    margin-top: 100px;
+    height: 200px;
+}
+
+#contact .inner i {
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#contact .inner span {
+    display: block;
+    padding: 20px 0;
+    font-size: 26px;
+}

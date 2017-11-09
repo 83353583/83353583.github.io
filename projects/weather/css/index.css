@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #cbcbcb;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+}
+html {
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 55px;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.header{
+    position: fixed;
+    z-index:2;
+    padding: .24rem;
+    width: 100%;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+.city-cover{
+    position: absolute;
+}
+.province{
+    float: left;
+}
+.city{
+    float: left;
+}
+.header h1{
+    text-align: center;
+    font-size: .4rem;
+}
+.current{
+    width: 100%;
+    height: 6rem;
+    background: rgba(51, 51, 51, 0.67);
+    position: relative;
+    border-bottom: 1px solid #333;
+}
+.cur-time{
+    position: absolute;
+    font-size: .4rem;
+    top:1.4rem;
+    width: 100%;
+    text-align: center;
+}
+.cur-temp{
+    width: 100%;
+    font-size:1.4rem;
+    text-align: center;
+    line-height: 6rem;
+}
+.cur-weather{
+    position: absolute;
+    font-size: .4rem;
+    bottom:1.4rem;
+    width: 100%;
+    text-align: center;
+}
+.current .temp{
+    position: absolute;
+    font-size: .4rem;
+    bottom:.8rem;
+    width: 100%;
+    text-align: center;
+}
+.hourly{
+    position: relative;
+    width: 100%;
+    height: 2.4rem;
+    background: rgba(51, 51, 51, 0.67);
+    overflow: auto;
+    border-bottom: 1px solid #333;
+}
+.hourly::-webkit-scrollbar {
+    display:none
+}
+.hourly ul{
+    width: 36rem;
+}
+.hourly ul li{
+    float: left;
+    height: 2.4rem;
+    width: 1.5rem;
+}
+.hourly ul li time{
+    padding:.2rem 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+.hourly ul li .img{
+    width: 100%;
+    height: 1.02rem;
+    padding:0 .24rem;
+}
+.hourly ul li p{
+    margin-top: .1rem;
+    text-align: center;
+}
+.daily{
+    position: relative;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.67);
+
+}
+.daily ul li{
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid #333;
+    position: relative;
+    padding: 0 .24rem;
+}
+.daily ul li .date{
+    float: left;
+    width: 50%;
+    line-height: 1rem;
+
+}
+.daily ul li .img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    width: 1rem;
+    height: 1rem;
+
+}
+.daily ul li .temp{
+    float: right;
+    width: 50%;
+    text-align: right;
+    line-height: 1rem;
+}
+

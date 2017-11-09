@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="control">
+    <h1>添加了一个AI的五子棋</h1>
+    <input type="button" value="开始游戏" id="start">
+    <div class="mode">
+        <h1>选择模式</h1>
+        <div><input type="radio" name="mode" checked id="PVP"><span>双人对战</span></div>
+        <div><input type="radio" name="mode" id="AI"><span>人机模式</span></div>
+    </div>
+</div>
+<div class="container">
+    <div class="back">&lt;</div>
+    <div class="black rotate"></div>
+    <div class="white"></div>
+    <canvas width="620" height="620"></canvas>
+</div>
+<div class="over">
+    <div class="manual">
+        <div class="close">X</div>
+        <div class="manual-img"></div>
+        <a id="download">下载棋谱</a>
+    </div>
+    <div class="win">
+        <span></span>
+        <input type="button" value="重新开始" id="restart">
+        <input type="button" value="获取棋谱" id="get-manual">
+    </div>
+</div>
+<div id="music"></div>
+<audio src="audio/骆集益%20-%20回梦游仙.mp3" autoplay loop></audio>
+</body>
+<script src="js/index1.js"></script>
+</html>

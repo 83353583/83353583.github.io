@@ -1,0 +1,109 @@
+.neirong{
+	width: 960px;
+	margin: 0 auto 22px;
+	overflow: hidden;
+}
+.neirong-top{
+	width: 1226px;
+	height: 58px;
+}
+.neirong-top h1{
+	color: #333;
+	font-size: 22px;
+	line-height: 58px;
+	float: left;
+}
+.neirong-bottom{
+	margin-bottom: 20px;
+	width: 960px;
+	height: 420px;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom-warp{
+	width: 10000px;
+	transition: all .5s;
+
+}
+.bottom-inner{
+	float: left;
+}
+.neirong-inner{
+	width: 296px;
+	background-color: #fff;
+	height: 419px;
+	box-shadow: 3px 3px 4px 0px rgb(154, 154, 154);
+	margin-right: 4px;
+}
+.neirong-inner-last{
+	margin-right: 0;
+}
+.neirong-inner h1{
+	text-align: center;
+	font-size: 16px;
+	margin: 45px auto 18px;
+	color: #333;
+	line-height: 16px;
+}
+.lunbo h2{
+	font-size: 20px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.lunbo p{
+	font-size: 12px;
+	height: 40px;
+	width: 200px;
+	margin: 0 auto 10px;
+	line-height: 20px;
+	text-align: center;
+	color: #b0b0b0;
+}
+.lunbo h2 a{
+	color: #000;
+}
+.lunbo p a{
+	color: #b0b0b0;
+}
+.lunbo h3{
+	font-size: 14px;
+	text-align: center;
+	color: #333;
+	margin-bottom: 15px;
+}
+.lunbo h3 a{
+	color: #333;
+}
+.lunbo-img{
+	width: 216px;
+	height: 154px;
+	margin: 0 auto;
+}
+.index{
+	padding-top: 10px;
+	margin: 10px 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.index span{
+	cursor: pointer;
+	box-sizing: content-box;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	margin: 0 5px;
+	border: 3px solid rgb(243, 243, 243);
+}
+.index .selected,.index span:hover{
+	border: 3px solid #333;
+}
