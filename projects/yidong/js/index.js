@@ -123,7 +123,51 @@
     });
 }
 
-
+//二维码
+{
+    let box = document.querySelector(".erwei");
+    let bbox = document.querySelector(".top-rightbox2");
+    bbox.onmouseover = function () {
+        // bbox.style.backgroundColor = "white";
+        box.style.display = "block";
+    };
+    bbox.onmouseout = function () {
+        // bbox.style.backgroundColor = "#f6f6f6";
+        box.style.display = "none";
+    }
+}
+{
+    let boxs = document.querySelectorAll(".czselected a");
+    boxs.forEach(function (ele, index) {
+        ele.onclick = function () {
+            for (let i = 0; i < boxs.length; i++) {
+                boxs[i].classList.remove("selected");
+            }
+            boxs[index].classList.add("selected");
+        }
+    })
+}
+{
+    let items = document.querySelectorAll(".extend");
+    let boxs = document.querySelectorAll(".kuozhan");
+    console.log(boxs);
+    items.forEach(function (ele, index) {
+        ele.onmouseenter = function () {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("tounav-kuo-active");
+                boxs[i].style.display = "none";
+            }
+            items[index].classList.add("tounav-kuo-active");
+            boxs[index].style.display = "block";
+        }
+    });
+    items.forEach(function (ele, index) {
+        ele.onmouseleave = function () {
+            items[index].classList.remove("tounav-kuo-active");
+            boxs[index].style.display = "none";
+        }
+    })
+}
 // banner
 {
     let dots = document.querySelectorAll(".dot ul li");

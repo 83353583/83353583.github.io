@@ -58,4 +58,10 @@ function getFullWeather(city){
         }
     });
 }
+$(".choose-city").click(function(){
+    $(".city-cover").show(500);
+});
+$(".return").click(function(){
+    $(".city-cover").hide(500);
+});
 

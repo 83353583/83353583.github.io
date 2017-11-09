@@ -69,8 +69,11 @@ p {
     border-radius: 50%;
     /*overflow: hidden;*/
     position: relative;
+    margin-top: 1em;
 }
-
+#main h1{
+    padding-top: 1em;
+}
 #main .icon img {
     border-radius: 50%;
     width: 100%;
@@ -138,9 +141,11 @@ p {
 
 #info p {
     text-indent: 2em;
-    font-size: 16px;
+    font-size: 20px;
 }
-
+#info p b{
+    color:#0073FF;
+}
 #info .photo {
     width: 38%;
     height: 38%;
