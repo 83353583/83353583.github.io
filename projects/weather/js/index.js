@@ -1,9 +1,9 @@
-$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
+$.getScript("//int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
     getFullWeather(remote_ip_info.city)
 });
 var data;
 $.ajax({
-    url:"http://api.jisuapi.com/weather/city?appkey=efb1634f99c82405&city",
+    url:"//api.jisuapi.com/weather/city?appkey=efb1634f99c82405&city",
     dataType:"jsonp",
     success:function(r){
         data=r.result;
