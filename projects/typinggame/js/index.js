@@ -49,7 +49,7 @@ class Game {
             var randomNumber = Math.floor(Math.random() * 26 + 65);
             var randomLetter = String.fromCharCode(randomNumber);
         } while (this.obj[randomLetter]);
-        newItem.style.backgroundImage = "url(../images/" + randomLetter + ".png)";
+        newItem.style.backgroundImage = "url(images/" + randomLetter + ".png)";
         do {
             var randomLeft = Math.floor(Math.random() * (this.senceWidth - 100));
         } while (this._checkLeft(randomLeft));
