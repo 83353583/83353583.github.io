@@ -76,7 +76,7 @@ main {
     text-indent: .8em;
 }
 .province{
-    height: 100%;
+    height: calc(100% - 1rem);
     color: #ccc;
     float: left;
     width: 30%;
@@ -84,6 +84,9 @@ main {
     border-right: 1px solid #ccc;
     overflow: scroll;
 }
+.province::-webkit-scrollbar {
+     display:none
+ }
 .city-cover li{
     width: 100%;
     height: 1rem;
@@ -92,10 +95,14 @@ main {
     border-bottom: 1px solid #ccc;
 }
 .city{
+    height: calc(100% - 1rem);
     float: right;
     width: 70%;
     font-size: .4rem;
-
+    overflow: scroll;
+}
+.city::-webkit-scrollbar {
+    display:none
 }
 .choose-city{
     position: absolute;
